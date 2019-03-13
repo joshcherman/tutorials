@@ -1,4 +1,4 @@
-# GraphQl to PySpark translation POC
+# GraphQL to PySpark translation POC
 
 ## Run Locally
 
