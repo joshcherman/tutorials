@@ -1,0 +1,25 @@
+type Query {
+    bookById(bookId: Int): Book
+}
+
+type Book {
+    bookId: Int
+    name: String
+    pageCount: Int
+    author: Author
+    authorId: Int
+    bookEnrichments: BookEnrichments
+    sparkQuery: String #This would ideally be implemeted as an interface
+}
+
+type Author {
+    authorId: Int
+    firstName: String
+    lastName: String
+    sparkQuery: String #This would ideally be implemeted as an interface
+}
+
+type BookEnrichments {
+    bookId: Int
+    bookWordCount: Int
+}
